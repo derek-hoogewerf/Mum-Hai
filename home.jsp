@@ -5,7 +5,8 @@
 
 </form>
 <div>To keep track on no. of visits</div>
-<form action="visit" metho="POST"> 
+<form action="visit" method="POST"> 
+  
 </form>
 </body>
 </html>
