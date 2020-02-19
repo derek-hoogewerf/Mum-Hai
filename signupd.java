@@ -26,8 +26,8 @@ public class MyDB extends HttpServlet {
         PrintWriter out = response.getWriter();
         try{
         Class.forName("com.mysql.jdbc.Driver");
-         Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/driver", "root", "root");
-         PreparedStatement s = (PreparedStatement) con.prepareStatement("insert d_uname,d_pass,d_name,d_pass,d_num,d_lang,d_lic,v_id  into info values (?, ?, ?, ?, ?, ?, ?, ?)");
+         Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUMHAI", "root", "root");
+         PreparedStatement s = (PreparedStatement) con.prepareStatement("insert d_uname,d_pass,d_name,d_pass,d_num,d_lang,d_lic,v_id  into driver values (?, ?, ?, ?, ?, ?, ?, ?)");
         
             s.setString(1, u);
             s.setString(2, p);
