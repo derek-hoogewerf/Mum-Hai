@@ -20,5 +20,10 @@ stmt = conn.createStatement();ResultSet row = stmt.executeQuery(query);
 }
   }catch(Exception e){out.println(e);}
 %>
+ <a href="signup.jsp" >Not registered yet?...</a>
+ <br/><BR/><br/>
+ <a href="loging.jsp">Sign In as a Guide</a><br/>
+ <a href="logind.jsp">Sign In as a Driver</a><br/>
+ <a href="logina.jsp">Sign in Admin</a><br/>
     </body>
 </html>
