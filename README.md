@@ -1,4 +1,4 @@
-# Mum-hi
+# Mum-Hai
 an inter city site seeing guide booking and navigation website.
 
-start page: index.html
+start page: login.jsp
