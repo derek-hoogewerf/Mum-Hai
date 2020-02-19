@@ -5,11 +5,12 @@
     </head>
     <body>
         <form action="signupa" method="POST">
-            Name:<input type="text" name="name"><br>
-            Username:<input type="text" name="username">
-            Password:<input type="password" name="password"><br>
-            Email-ID:<input type="text" name="email"><br>
-            Phone number:<input type="text" name="phoneno"><br>
+            ID:<input type="text" name="id">
+            Name:<input type="text" name="n"><br>
+            Username:<input type="text" name="u">
+            Password:<input type="password" name="p"><br>
+            Email-ID:<input type="text" name="e"><br>
+            Phone number:<input type="text" name="num"><br>
             <input type="submit" value="Insert"><br>
         </form>
     </body>
