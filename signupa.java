@@ -8,7 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-public class MyDB extends HttpServlet {
+public class AdminDB extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -23,15 +23,15 @@ public class MyDB extends HttpServlet {
         PrintWriter out = response.getWriter();
         try{
         Class.forName("com.mysql.jdbc.Driver");
-         Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/abc", "root", "root");
-         PreparedStatement s = (PreparedStatement) con.prepareStatement("insert into info values (?, ?, ?, ?)");
-         s.setString(1, id);
-         s.setString(2, u);
+         Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUMHAI", "root", "root");
+         PreparedStatement s = (PreparedStatement) con.prepareStatement("insert into administrator values (?, ?, ?, ?, ?)");
+           s.setString(1, id);
+            s.setString(2, u);
             s.setString(3, p);
             s.setString(4, n);
             s.setString(3, e);
             s.setString(4, e);
-            s.setString(5.num);
+            s.setString(5, num);
            out.println("Inserted");
         
         }
