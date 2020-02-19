@@ -5,16 +5,17 @@
     </head>
     <body>
         <form action="signupd" method="POST">
-            Name:<input type="text" name="n"><br/>
-            Password:<input type="password" name="p"><br/>
-            Email-ID:<input type="text" name="e"><br/>
-            Phone number:<input type="text" name="c"><br/>
+            Username:<input type="text" name="username"><br/>
+            Name:<input type="text" name="name"><br/>
+            Password:<input type="password" name="password"><br/>
+            Email-ID:<input type="text" name="email"><br/>
+            Phone number:<input type="text" name="phone"><br/>
             <%
             //check if no is 10 digits
             %>
             Language of preference:<input type="text" name="language">
-            Liscense number:<input type="text" name="liscence">
-            Car registeration number:<input type="text" name="v_id>
+            Liscense number:<input type="text" name="lic">
+            Car registeration number:<input type="text" name="regno">
             <input type="submit" value="Submit"><br/>
         </form>
     </body>
