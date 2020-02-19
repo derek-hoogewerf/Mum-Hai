@@ -19,8 +19,8 @@ public class MyDB extends HttpServlet {
         String n = request.getParameter("name");
         String p = request.getParameter("password");
         String e = request.getParameter("email");
-        String num = request.getParameter("phoneno");
-        String l=request.getParameter("language");
+        String num = request.getParameter("phone");
+        String l=request.getParameter("lang");
         String lic=request.getParameter("lic");
         String reg=request.getParameter("regno");
         PrintWriter out = response.getWriter();
