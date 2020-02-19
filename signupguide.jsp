@@ -12,7 +12,7 @@
             Enter a username: <input type="text" name="username">
             
            Enter your password: <input type="password" name="password">
-           Enter your language: <input type="text" name="lamguage">
+           Enter your language: <input type="text" name="language">
            Enter your email : <input type="text" name="email">
            <%
            //check if email contains @
