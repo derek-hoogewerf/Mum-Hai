@@ -15,7 +15,8 @@ Reconfirm password:<input type="text" name="password2">
 
 %>
 Phone number: <input type="text" name="countrycode"> <input type="text" name="phoneno">
-<% //check if number it ten digits %>
+<% //check if number it ten digits
+%>
   
 Enter  your nationality:  <input type="text" name="nationality">
 Enter  your email:  <input type="text" name="email">
