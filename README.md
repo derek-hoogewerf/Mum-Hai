@@ -1,4 +1,4 @@
 # Mum-Hai
 an inter city site seeing guide booking and navigation website.
 
-start page: login.jsp
+virtual env => mum
