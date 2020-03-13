@@ -5,4 +5,6 @@ virtual env => mum
 Apps
 to create python manage.py startapp [appname]
 apps    =>home:home page
+
+ccheck requirements.txt for requirements
           
