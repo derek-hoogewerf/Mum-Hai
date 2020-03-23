@@ -1,10 +1,8 @@
 # Mum-Hai
 an inter city site seeing guide booking and navigation website.
 
-virtual env => mum
-Apps
-to create python manage.py startapp [appname]
-apps    =>home:home page
 
-ccheck requirements.txt for requirements
-          
+django-project for exploring, booking and navigating to sites in <b>Mumbai, Maharashtra</b>.
+
+
+
