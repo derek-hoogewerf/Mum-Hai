@@ -1,8 +1,9 @@
 # Mum-Hai
-an inter city site seeing guide booking and navigation website.
+This is a django-prject webapp for inner-city giude, driver and site booking.
+The city selected in this case is Mumbai, India. 
 
-virtual env => mum
-Apps
-to create python manage.py startapp [appname]
-apps    =>home:home page
-          
+
+django-project for exploring, booking and navigating to sites in <b>Mumbai, Maharashtra</b>.
+
+
+
