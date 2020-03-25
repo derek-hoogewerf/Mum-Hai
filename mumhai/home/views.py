@@ -13,4 +13,4 @@ def add(request):
     return render(request, 'result.html', {'result':res})
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, "index.html",{'price':700})
