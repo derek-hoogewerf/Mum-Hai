@@ -251,6 +251,7 @@
 				<div class="col">
 					<div class="destinations_container item_grid">
 
+						{% for dest in dests %}
 						<!-- Destination -->
 						<div class="destination item">
 							<div class="destination_image">
@@ -258,71 +259,13 @@
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest1.name}}</a></div>
-								<div class="destination_subtitle"><p> {{dest1.desc}} </p></div>
-								<div class="destination_price">From ${{dest1.price}}</div>
+								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest.name}}</a></div>
+								<div class="destination_subtitle"><p> {{dest.desc}} </p></div>
+								<div class="destination_price">From ${{dest.price}}</div>
 							</div>
 						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_2.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest2.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest2.desc}} </p></div>
-								<div class="destination_price">From ${{dest2.price}}</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_3.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest3.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest3.desc}}</p></div>
-								<div class="destination_price">From ${{dest3.price}}</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_4.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest4.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest4.desc}}</p></div>
-								<div class="destination_price">From ${{dest4.price}}</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_5.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest5.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest5.desc}}</p></div>
-								<div class="destination_price">From ${{dest5.price}}</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_6.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest6.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest6.desc}}</p></div>
-								<div class="destination_price">From ${{dest6.price}}</div>
-							</div>
-						</div>
+						{% endfor %}
+						
 
 					</div>
 				</div>
