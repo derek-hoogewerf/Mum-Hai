@@ -54,7 +54,7 @@ def index(request):
     dest6.price = 849
     dest6.offer = False
 
-    dests = [dest1, dest2, dest3,] #dest4, dest5, dest6]
+    dests = [dest1, dest2, dest3, dest4, dest5, dest6]
 
     return render(request, "index.html", {'dests': dests})
 
