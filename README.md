@@ -1,5 +1,5 @@
 # Mum-Hai
-This is a django-prject webapp for inner-city giude, driver and site booking.
+This is a django-project webapp for inner-city giude, driver and site booking.
 The city selected in this case is Mumbai, India. 
 
 
