@@ -10,9 +10,14 @@ def register(request):
         password = request.POST['password'];
         email = request.POST['email'];
 
-        user = User.objects.create_user(username=username, password=password, email=email, first_name=first_name, last_name=last_name)
-        user.save();
-        print('user created')
-        return redirect('/')
+        if User.objects.filter(username=username).exists():
+            print ('User name')
+        elif User.objects.filter(email=email).exists:
+            print ('email already registered')
+        else:
+            user = User.objects.create_user(username=username, password=password, email=email, first_name=first_name, last_name=last_name)
+            user.save();
+            print('user created')
+            return redirect('/')
     else:
         return render(request, 'register.html')
