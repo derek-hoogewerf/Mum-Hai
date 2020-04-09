@@ -12,14 +12,14 @@ def register(request):
         email = request.POST['email']
 
         if User.objects.filter(username=username).exists():
-            messages.info(request, 'User name')
+            messages.info(request, 'Username taken')
             return redirect('register')
         elif User.objects.filter(email=email).exists():
             messages.info(request, 'email already registered')
             return redirect('register')
         else:
             user = User.objects.create_user(username=username, password=password, email=email, first_name=first_name, last_name=last_name)
-            user.save()
+            user.save();
             print('user created')
             return redirect('/')
     else:
