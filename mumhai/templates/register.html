@@ -16,7 +16,9 @@
         <input type="submit" value="Submit">
     </form>  
     <div>
-        <h3> {{messagees}} </h3>
+        {% for message in messages %}
+        <h3> {{messages}} </h3>
+        {% endfor %}
     </div>
 </body>
 </html>
