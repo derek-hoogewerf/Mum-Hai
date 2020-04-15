@@ -9,11 +9,11 @@ def login(request):
         password = request.POST['password']
         user = auth.authenticate(username=username, password=password)
         if user is not None:
-            auth,login(request, user)
+            auth.login(request, user)
             return redirect('/')
         else:
             messages.error(request, 'invalid credentials')
-            return redirect('login')
+            return render(request, 'login')
     else:
         pass
 
@@ -36,6 +36,6 @@ def register(request):
             user = User.objects.create_user(username=username, password=password, email=email, first_name=first_name, last_name=last_name)
             user.save();
             print('user created')
-            return redirect('login')
+            return render(request, 'login')
     else:
         return render(request, 'register.html')
