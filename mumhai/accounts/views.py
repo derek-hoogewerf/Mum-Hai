@@ -39,3 +39,7 @@ def register(request):
             return render(request, 'login')
     else:
         return render(request, 'register.html')
+
+def logout(request):
+    auth.logout(request);
+    return redirect('/')
