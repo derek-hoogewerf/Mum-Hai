@@ -34,7 +34,7 @@ def register(request):
             messages.info(request, 'email already registered')
             return redirect('register')
         elif password1 != password2:
-            messages.info(request, 'Passwords don\'t match. Please reenter passwords')
+            messages.info(request, 'Passwords don\'t match. Please re-enter passwords')
             return redirect('register')
         else:
             user = User.objects.create_user(username=username, password=password1, email=email, first_name=first_name, last_name=last_name)
@@ -42,7 +42,7 @@ def register(request):
             print('User Created')
             return render(request, 'login')
     else:
-        return render(request, 'register.html')
+        return render(request, 'register')
 
 def logout(request):
     auth.logout(request);
